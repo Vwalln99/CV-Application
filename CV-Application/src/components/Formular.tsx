@@ -7,7 +7,7 @@ export default function InputForm() {
     firstName: "",
     lastname: "",
     birthDate: "",
-    adress: "",
+    address: "",
     zipcode: "",
     location: "",
     email: "",
@@ -66,11 +66,11 @@ export default function InputForm() {
             ></input>
           </div>
           <div style={paddingStyle}>
-            <label style={blockStyle}>Adress</label>
+            <label style={blockStyle}>Address</label>
             <input
               type="text"
-              value={userData.adress}
-              onChange={(e) => handleInputChange(e, "adress")}
+              value={userData.address}
+              onChange={(e) => handleInputChange(e, "address")}
             ></input>
           </div>
           <div style={paddingStyle}>
@@ -82,19 +82,19 @@ export default function InputForm() {
             ></input>
           </div>
           <div style={paddingStyle}>
-            <label style={blockStyle}>E-Mail</label>
-            <input
-              type="email"
-              value={userData.email}
-              onChange={(e) => handleInputChange(e, "email")}
-            ></input>
-          </div>
-          <div style={paddingStyle}>
             <label style={blockStyle}>Location</label>
             <input
               type="text"
               value={userData.location}
               onChange={(e) => handleInputChange(e, "location")}
+            ></input>
+          </div>
+          <div style={paddingStyle}>
+            <label style={blockStyle}>E-Mail</label>
+            <input
+              type="email"
+              value={userData.email}
+              onChange={(e) => handleInputChange(e, "email")}
             ></input>
           </div>
           <div style={paddingStyle}>

@@ -3,7 +3,7 @@ type Props = {
     firstName: string,
     lastname: string,
     birthDate: string,
-    adress:string,
+    address:string,
     zipcode:string,
     location:string,
     email:string,
@@ -14,10 +14,10 @@ type Props = {
 export default function FormViewPersonal({formDataPersonal}: Props) {
     return(
         <>
-        <p>{formDataPersonal.firstName}</p>
-        <p>{formDataPersonal.lastname}</p>
+        <h2>{formDataPersonal.firstName}</h2>
+        <h2>{formDataPersonal.lastname}</h2>
         <p>{formDataPersonal.birthDate}</p>
-        <p>{formDataPersonal.adress}</p>
+        <p>{formDataPersonal.address}</p>
         <p>{formDataPersonal.zipcode}</p>
         <p>{formDataPersonal.location}</p>
         <p>{formDataPersonal.email}</p>

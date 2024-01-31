@@ -37,6 +37,16 @@ form{
 
 h1{
   text-align: center;
+  color: forestgreen;
+}
+
+h2{
+  font-size: 2.9em;
+  color: rgb(32, 78, 32);
+}
+
+input{
+  border-color: forestgreen;
 }
 
 .formattedData {
@@ -49,6 +59,7 @@ h1{
   margin-bottom: 2em;
   border-bottom: solid black 1px;
   padding: 2em;
+  line-height: 0.5;
 }
 
 .formS{
