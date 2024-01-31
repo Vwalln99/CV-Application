@@ -35,6 +35,7 @@ export default function InputForm(){
         console.log(userData);
     };
 
+
     return(
         <>
         <form onSubmit={(e)=>handleSubmit(e)}>
@@ -78,10 +79,12 @@ export default function InputForm(){
                 <input type="number" value={userData.telNum}
                 onChange={(e)=>handleInputChange(e,"telNum")}></input>
             </div>
-            
+            <button type="submit" onClick={()=>(console.log(userData))}>
+            Save
+            </button>
            
         </form>
-        <div className="formattedData">
+        <div className="formattedData" id="formular">
         <FormViewPersonal formDataPersonal={userData} />
         </div>
         

@@ -20,6 +20,7 @@ const btnStyle={
 
   return (
     <>
+    <div className='container'>
       <div>
         <h1>Curriculum Vitae</h1>
         <h2>Personal Data</h2>
@@ -33,7 +34,7 @@ const btnStyle={
         <h2>Professional career</h2>
         <InputFormCareer/>
       </div>
-      
+      </div>
         
     </>
   )

@@ -1,11 +1,28 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
+  max-width: fit-content;
+  margin: 0 ;
   padding: 2rem;
-  text-align: center;
+  text-align: left;
 }
-
+.container{
+  float: left;
+  margin-left: 200px;
+}
 .formattedData{
+  position: absolute;
+  height: 350px;
+  width: 550px;
+  float: right;
   border: black solid 1px;
+  margin-left: 400px;
+}
+#school{
+margin-top: -450px;
+}
+#formular{
+margin-top: -550px;
+}
+#karriere{
+margin-top: -490px;
 }
 
