@@ -1,28 +1,86 @@
+
+
 #root {
-  max-width: fit-content;
-  margin: 0 ;
+  margin: 0;
   padding: 2rem;
   text-align: left;
 }
-.container{
-  float: left;
-  margin-left: 200px;
-}
-.formattedData{
-  position: absolute;
-  height: 350px;
-  width: 550px;
-  float: right;
-  border: black solid 1px;
-  margin-left: 400px;
-}
-#school{
-margin-top: -450px;
-}
-#formular{
-margin-top: -550px;
-}
-#karriere{
-margin-top: -490px;
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: solid black 1px;
+  padding: 1em;
 }
 
+label{
+  font-weight: bold;
+}
+button{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: black;
+  margin-left: 0.5em;
+}
+form{
+  padding: 2em;
+  border: solid black 1px;
+  width:300px;
+  margin-right: 15em;
+  margin-bottom: 2em;
+}
+
+h1{
+  text-align: center;
+}
+
+.formattedData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto; 
+  height: auto;
+  margin-left: 3em;
+  margin-bottom: 2em;
+  border-bottom: solid black 1px;
+  padding: 2em;
+}
+
+.formS{
+margin-right: 25.5em;
+}
+
+.formK{
+  margin-right: 25.5em;
+}
+
+.formF{
+  margin-right: 25.5em;
+}
+
+#formular {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#school {
+  display: flex;
+  flex-direction: row;
+}
+
+#karriere {
+  display: flex;
+  flex-direction: row;
+}
+
+
+#root > div >div {
+display:flex;
+justify-content: center;
+}

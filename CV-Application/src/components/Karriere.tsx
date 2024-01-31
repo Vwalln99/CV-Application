@@ -57,7 +57,7 @@ export default function InputFormCareer() {
   return (
     <>
       {showForm && (
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => handleSubmit(e)}className="formK">
           <div style={paddingStyle}>
             <label style={blockStyle}>Job name</label>
             <input
@@ -101,7 +101,7 @@ export default function InputFormCareer() {
           <button type="submit">Save</button>
         </form>
       )}
-      <div className="formattedData" id="karriere">
+       <div className="formattedData" id="karriere">
         {entries.map((entry, index) => (
           <div key={index} >
             <FormViewCareer formDataCareer={entry} />

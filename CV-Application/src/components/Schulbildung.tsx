@@ -53,7 +53,7 @@ export default function InputFormEducation() {
   return (
     <>
       {showForm && (
-        <form onSubmit={(e) => handleSubmit(e)}>
+        <form onSubmit={(e) => handleSubmit(e)} className="formS">
           <div style={paddingStyle}>
             <label style={blockStyle}>School name</label>
             <input
@@ -80,7 +80,7 @@ export default function InputFormEducation() {
           </div>
           <button type="submit">Save</button>
         </form>
-        )}
+      )}
         <div className="formattedData" id="school">
           {entries.map((entry, index) => (
             <div key={index}>
