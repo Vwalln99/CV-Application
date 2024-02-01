@@ -4,7 +4,6 @@
   margin: 0;
   padding: 2rem;
   text-align: left;
-  box-sizing: border-box;
 }
 
 .container {
@@ -40,13 +39,14 @@ form{
   margin-bottom: 2em;
   font-size: 18px;
   background-color: beige;
-  
+
 }
 
 h1{
   text-align: center;
   color: rgb(250, 184, 29);
-  
+    font-size: 5em;
+    line-height: 1.1;
 }
 
 h2{
@@ -92,17 +92,7 @@ input{
   text-align: center;
 }
 
-.formS{
-margin-right: 25.5em;
-}
 
-.formK{
-  margin-right: 25.5em;
-}
-
-.formF{
-  margin-right: 25.5em;
-}
 
 #formular {
   display: flex;
@@ -131,4 +121,131 @@ margin-right: 25.5em;
 #root > div >div {
 display:flex;
 justify-content: center;
+}
+
+@media screen and (max-width: 600px){
+
+#root {
+  margin: 0;
+  padding: 0.5rem;
+  text-align: left;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  border: solid rgb(78, 52, 7) 3px;
+  padding: 0.5em;
+}
+
+label{
+  color: black;
+  font-weight: bold;
+}
+button{
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 1em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: white;
+  background-color: rgb(78, 52, 7);
+  margin: 0.5em;
+  font-weight: bold;
+  
+}
+form{
+  justify-content: center;
+  padding: 1em;
+  border: solid transparent;
+  border-radius: 5%;
+  width:140px;
+  margin-right: 1em;
+  margin-bottom: 1em;
+  font-size: 12px;
+  background-color: beige;
+
+}
+
+h1{
+  text-align: center;
+  color: rgb(250, 184, 29);
+  font-size: 3em;
+  
+}
+
+h2{
+  font-size: 2em;
+  color: rgb(110, 77, 5);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-decoration: underline;
+
+}
+h3{
+  font-size: 1.4em;
+  color:  rgb(110, 77, 5);
+  line-height: 0px;
+}
+h4{
+  font-size: 1.1em;
+  color:  rgb(110, 77, 5);
+  line-height: 0px;
+}
+p{
+  line-height: 5px;
+  font-size: 14px;
+}
+input{
+  border-color:  rgb(209, 147, 14);
+  background-color: rgba(242, 235, 235, 0.988);
+  font-size: 14px;
+  margin-top: 5px;
+  width: 100px;
+}
+
+.formattedData {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: auto; 
+  height: auto;
+  margin-bottom: 2em;
+  border-bottom: solid rgb(78, 52, 7) 3px;
+  padding: 2em;
+  text-align: center;
+}
+
+
+
+#formular {
+  display: flex;
+  flex-direction: column;
+
+}
+
+#school {
+  display: flex;
+  flex-direction: column;
+}
+
+#karriere {
+  display: flex;
+  flex-direction: column;
+}
+
+.key{
+  border: solid 2px grey;
+  border-radius: 5%;
+  margin: 5px;
+  padding: 5px;
+  align-self: center;
+}
+
+#root > div >div {
+display:flex;
+justify-content: center;
+}
 }
