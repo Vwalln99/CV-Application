@@ -83,13 +83,13 @@ export default function InputFormEducation() {
       )}
         <div className="formattedData" id="school">
           {entries.map((entry, index) => (
-            <div key={index}>
+            <div key={index} className="key">
               <FormViewSchool formDataSchool={entry} />
               <button type="button" onClick={() => handleRemove(index)}>
-                Remove
+                -
               </button>
               <button type="button" onClick={() => handleEdit(index)}>
-                Edit
+                +
               </button>
             </div>
           ))}

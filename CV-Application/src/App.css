@@ -9,7 +9,7 @@
 .container {
   display: flex;
   flex-direction: column;
-  border: solid black 1px;
+  border: solid rgb(78, 52, 7) 3px;
   padding: 1em;
 }
 
@@ -19,34 +19,61 @@ label{
 button{
   border-radius: 8px;
   border: 1px solid transparent;
-  padding: 0.6em 1.2em;
+  padding: 1em 1em;
   font-size: 1em;
   font-weight: 500;
   font-family: inherit;
   color: white;
-  background-color: black;
-  margin-left: 0.5em;
+  background-color: rgb(78, 52, 7);
+  margin: 0.5em;
+  font-weight: bold;
+  
 }
 form{
   padding: 2em;
-  border: solid black 1px;
+  border: solid transparent;
+  border-radius: 5%;
   width:300px;
-  margin-right: 15em;
+  margin-right: 8em;
   margin-bottom: 2em;
+  font-size: 18px;
+  background-color: beige;
 }
 
 h1{
   text-align: center;
-  color: forestgreen;
+  color: rgb(250, 184, 29);
+  
 }
 
 h2{
   font-size: 2.9em;
-  color: rgb(32, 78, 32);
-}
+  color: rgb(110, 77, 5);
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 40px;
+  text-decoration: underline;
 
+}
+h3{
+  font-size: 2.1em;
+  color:  rgb(110, 77, 5);
+  line-height: 0px;
+}
+h4{
+  font-size: 1.6em;
+  color:  rgb(110, 77, 5);
+  line-height: 0px;
+}
+p{
+  line-height: 5px;
+  font-size: 18px;
+}
 input{
-  border-color: forestgreen;
+  border-color:  rgb(209, 147, 14);
+  background-color: rgba(242, 235, 235, 0.988);
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .formattedData {
@@ -55,11 +82,10 @@ input{
   justify-content: center;
   width: auto; 
   height: auto;
-  margin-left: 3em;
   margin-bottom: 2em;
-  border-bottom: solid black 1px;
+  border-bottom: solid rgb(78, 52, 7) 3px;
   padding: 2em;
-  line-height: 0.5;
+  text-align: center;
 }
 
 .formS{
@@ -90,6 +116,13 @@ margin-right: 25.5em;
   flex-direction: row;
 }
 
+.key{
+  border: solid 2px grey;
+  border-radius: 5%;
+  margin: 5px;
+  padding: 10px;
+  align-self: center;
+}
 
 #root > div >div {
 display:flex;

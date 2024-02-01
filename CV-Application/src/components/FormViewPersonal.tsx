@@ -14,8 +14,8 @@ type Props = {
 export default function FormViewPersonal({formDataPersonal}: Props) {
     return(
         <>
-        <h2>{formDataPersonal.firstName}</h2>
-        <h2>{formDataPersonal.lastname}</h2>
+        <h3>{formDataPersonal.firstName}</h3>
+        <h4>{formDataPersonal.lastname}</h4>
         <p>{formDataPersonal.birthDate}</p>
         <p>{formDataPersonal.address}</p>
         <p>{formDataPersonal.zipcode}</p>

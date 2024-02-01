@@ -12,8 +12,7 @@ type Props = {
 export default function FormViewCareer({formDataCareer}: Props) {
     return(
         <>
-                  <h2>Career</h2>
-        <p>{formDataCareer.jobName}</p>
+        <h4>{formDataCareer.jobName}</h4>
         <p>{formDataCareer.position}</p>
         <p>{formDataCareer.jobDescripton}</p>
         <p>{formDataCareer.startDate}</p>

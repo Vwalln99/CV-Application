@@ -10,8 +10,7 @@ type Props = {
 export default function FormViewSchool({formDataSchool}: Props) {
     return(
         <>
-        <h2>Education</h2>
-        <p>{formDataSchool.schoolName}</p>
+        <h4>{formDataSchool.schoolName}</h4>
         <p>{formDataSchool.subject}</p>
         <p>{formDataSchool.endDate}</p>
         </>
