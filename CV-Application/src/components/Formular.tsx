@@ -31,23 +31,10 @@ export default function InputForm() {
     setUserData({ ...userData, [type]: e?.target?.value });
   };
 
-  const isFormValid = () => {
-    for (const key in userData) {
-      if (userData[key] === "") {
-        return false;
-      }
-    }
-    return true;
-  };
-  
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-  
-    if (isFormValid()) {
-      setShowForm(false);
-    } else {
-      alert("Please fill out all fields before submitting the form.");
-    }
+    setShowForm(false);
+    console.log(userData);
   };
 
   return (
